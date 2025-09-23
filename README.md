@@ -7,7 +7,9 @@ This project explores whether we can **predict the next-day direction of a singl
 
 ## Research Question
 
-Can we build an interpretable machine-learning model to predict next-day stock behavior—focusing on idiosyncratic (excess) return—using historical market, technical, sector, and macro data to support risk-aware trading?
+**Note:** The wording of the problem statement has been modified slighly from previously submitted version.
+
+Can we build an interpretable machine-learning model to predict next-day stock behavior - focusing on idiosyncratic (excess) return - using historical market, technical, sector, and macro data to support risk-aware trading?
 
 
 ## Data & Sources
