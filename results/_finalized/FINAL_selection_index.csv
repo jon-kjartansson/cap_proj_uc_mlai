@@ -1,0 +1,6 @@
+Scenario,Suite,N_selected,CSV
+sp400_long,QQQ,12,results/_finalized/FINAL_top_tickers_sp400_long_QQQ.csv
+sp500_short,QQQ,6,results/_finalized/FINAL_top_tickers_sp500_short_QQQ.csv
+sp600_long,QQQ,12,results/_finalized/FINAL_top_tickers_sp600_long_QQQ.csv
+sp600_med,QQQ,12,results/_finalized/FINAL_top_tickers_sp600_med_QQQ.csv
+sp600_short,QQQ,12,results/_finalized/FINAL_top_tickers_sp600_short_QQQ.csv
