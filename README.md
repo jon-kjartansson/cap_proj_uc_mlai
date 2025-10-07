@@ -99,6 +99,21 @@ $$
 \text{Excess}_{t+1} = r^{\text{stock}}_{t+1} - \beta^{(mkt)}_{t}\, r^{\text{mkt}}_{t+1} - \beta^{(sect)}_{t}\, r^{\text{sector}}_{t+1},
 $$
 
+$$
+r^{\text{hedged}}_{t}
+\approx r^{\text{stock}}_{t}
+- \beta^{(\text{mkt})}_{t}\, r^{\text{mkt}}_{t}
+- \beta^{(\text{sec})}_{t}\, r^{\text{sector}}_{t}
+- \beta^{(\text{size})}_{t}\, r^{\text{size}}_{t}
+$$
+
+$$
+r^{\text{hedged}}_{t} = r^{\text{stock}}_{t} - \boldsymbol{\beta}_{t}^{\!\top}\,\mathbf{f}_{t}
+\quad\text{with}\quad
+\boldsymbol{\beta}_{t} = \big(\beta^{(\text{mkt})}_{t}, \beta^{(\text{sec})}_{t}, \beta^{(\text{size})}_{t}\big),\;
+\mathbf{f}_{t} = \big(r^{\text{mkt}}_{t}, r^{\text{sector}}_{t}, r^{\text{size}}_{t}\big).
+$$
+
 This removes systematic risk so results reflect stock-specific alpha.
 
 ---
