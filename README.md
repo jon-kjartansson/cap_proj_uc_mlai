@@ -209,7 +209,7 @@ pip install pandas numpy scikit-learn yfinance matplotlib seaborn
 ### Run the notebooks (order)
 
 1) `01_EDA.ipynb`
-   - optional: EDA was previously submitted as part of module 20
+   - **Optional:** EDA was previously submitted as part of module 20
 2) `02_Model_80_20_and_OneDay_OOS.ipynb`
    - 80/20 per-scenario runs -> writes `results/_summaries/...` and IS figures
    - One-Day Holdout monthly event runs -> writes `results/<scenario>_ONE_DAY_*` and OOS rollups
