@@ -88,6 +88,17 @@ $$
 \end{aligned}
 $$
 
+$$
+\text{HedgedReturn}_t \\approx\ &\ \text{StockReturn}_t \\
+&- \beta_{\text{mkt},t}\\text{MarketReturn}_t \\
+&- \beta_{\text{sec},t}\\text{SectorReturn}_t \\
+&- \beta_{\text{size},t}\\text{SizeReturn}_t
+$$
+
+$$
+\text{Excess}_{t+1} = r^{\text{stock}}_{t+1} - \beta^{(mkt)}_{t}\, r^{\text{mkt}}_{t+1} - \beta^{(sect)}_{t}\, r^{\text{sector}}_{t+1},
+$$
+
 This removes systematic risk so results reflect stock-specific alpha.
 
 ---
