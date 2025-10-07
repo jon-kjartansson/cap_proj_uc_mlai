@@ -80,26 +80,6 @@ Each scenario is analyzed under two hedge suites (market-hedge variants):
 Rolling betas (beta) are estimated for each stock to market, sector, and (mid/small) size factors when applicable (window ~60 days, min ~20):
 
 $$
-\begin{aligned}
-\text{HedgedReturn}_t \;\approx\; &\ \text{StockReturn}_t \\
-&- \beta_{\text{mkt},t}\,\text{MarketReturn}_t \\
-&- \beta_{\text{sec},t}\,\text{SectorReturn}_t \\
-&- \beta_{\text{size},t}\,\text{SizeReturn}_t
-\end{aligned}
-$$
-
-$$
-\text{HedgedReturn}_t \\approx\ &\ \text{StockReturn}_t \\
-&- \beta_{\text{mkt},t}\\text{MarketReturn}_t \\
-&- \beta_{\text{sec},t}\\text{SectorReturn}_t \\
-&- \beta_{\text{size},t}\\text{SizeReturn}_t
-$$
-
-$$
-\text{Excess}_{t+1} = r^{\text{stock}}_{t+1} - \beta^{(mkt)}_{t}\, r^{\text{mkt}}_{t+1} - \beta^{(sect)}_{t}\, r^{\text{sector}}_{t+1},
-$$
-
-$$
 r^{\text{hedged}}_{t}
 = r^{\text{stock}}_{t}
 - \beta^{(\text{mkt})}_{t}\, r^{\text{mkt}}_{t}
