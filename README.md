@@ -101,6 +101,14 @@ $$
 
 $$
 r^{\text{hedged}}_{t}
+= r^{\text{stock}}_{t}
+- \beta^{(\text{mkt})}_{t}\, r^{\text{mkt}}_{t}
+- \beta^{(\text{sec})}_{t}\, r^{\text{sector}}_{t}
+- \beta^{(\text{size})}_{t}\, r^{\text{size}}_{t}
+$$
+
+$$
+r^{\text{hedged}}_{t}
 \approx r^{\text{stock}}_{t}
 - \beta^{(\text{mkt})}_{t}\, r^{\text{mkt}}_{t}
 - \beta^{(\text{sec})}_{t}\, r^{\text{sector}}_{t}
