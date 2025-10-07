@@ -79,6 +79,7 @@ Each scenario is analyzed under two hedge suites (market-hedge variants):
 
 Rolling betas (beta) are estimated for each stock to market, sector, and (mid/small) size factors when applicable (window ~60 days, min ~20):
 
+```math
 $$
 r^{\text{hedged}}_{t}
 = r^{\text{stock}}_{t}
@@ -86,7 +87,9 @@ r^{\text{hedged}}_{t}
 - \beta^{(\text{sec})}_{t}\, r^{\text{sector}}_{t}
 - \beta^{(\text{size})}_{t}\, r^{\text{size}}_{t}
 $$
+```
 
+```math
 $$
 r^{\text{hedged}}_{t}
 \approx r^{\text{stock}}_{t}
@@ -94,13 +97,18 @@ r^{\text{hedged}}_{t}
 - \beta^{(\text{sec})}_{t}\, r^{\text{sector}}_{t}
 - \beta^{(\text{size})}_{t}\, r^{\text{size}}_{t}
 $$
+```
 
+```math
 $$
-r^{\text{hedged}}_{t} = r^{\text{stock}}_{t} - \boldsymbol{\beta}_{t}^{\!\top}\,\mathbf{f}_{t}
+r^{\text{hedged}}_{t}
+= r^{\text{stock}}_{t} - \boldsymbol{\beta}_{t}^{\top}\mathbf{f}_{t}
 \quad\text{with}\quad
-\boldsymbol{\beta}_{t} = \big(\beta^{(\text{mkt})}_{t}, \beta^{(\text{sec})}_{t}, \beta^{(\text{size})}_{t}\big),\;
+\boldsymbol{\beta}_{t} = \big(\beta^{(\text{mkt})}_{t}, \beta^{(\text{sec})}_{t}, \beta^{(\text{size})}_{t}\big)
+\ \text{and}\
 \mathbf{f}_{t} = \big(r^{\text{mkt}}_{t}, r^{\text{sector}}_{t}, r^{\text{size}}_{t}\big).
 $$
+```
 
 This removes systematic risk so results reflect stock-specific alpha.
 
