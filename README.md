@@ -79,18 +79,6 @@ Each scenario is analyzed under two hedge suites (market-hedge variants):
 
 Rolling betas (beta) are estimated for each stock to market, sector, and (mid/small) size factors when applicable (window ~60 days, min ~20):
 
-HedgedReturn ≈ StockReturn
-- beta_market * MarketReturn
-- beta_sector * SectorReturn
-- beta_size * SizeReturn (size term only for mid/small)
-
-$$
-\text{HedgedReturn} \approx \text{StockReturn}
-- \beta_{\text{mkt}}\cdot \text{MarketReturn}
-- \beta_{\text{sec}}\cdot \text{SectorReturn}
-- \beta_{\text{size}}\cdot \text{SizeReturn}
-$$
-
 $$
 \begin{aligned}
 \text{HedgedReturn}_t \;\approx\; &\ \text{StockReturn}_t \\
@@ -170,11 +158,11 @@ Per-ticker payoff dispersion (SPY shown; QQQ similar):
 
 ### 3) OOS top performers (QQQ hedge)
 
-![](results/_finalized/top_tickers_bar_sp600_short_QQQ.png)  
-![](results/_finalized/top_tickers_bar_sp600_med_QQQ.png)  
-![](results/_finalized/top_tickers_bar_sp600_long_QQQ.png)  
-![](results/_finalized/top_tickers_bar_sp400_long_QQQ.png)  
-![](results/_finalized/top_tickers_bar_sp500_short_QQQ.png)
+![](results/_finalized/figs/top_tickers_bar_sp600_short_QQQ.png)  
+![](results/_finalized/figs/top_tickers_bar_sp600_med_QQQ.png)  
+![](results/_finalized/figs/top_tickers_bar_sp600_long_QQQ.png)  
+![](results/_finalized/figs/top_tickers_bar_sp400_long_QQQ.png)  
+![](results/_finalized/figs/top_tickers_bar_sp500_short_QQQ.png)
 
 Examples: FTRE, HCC (SP600_short); GKOS, ADMA (SP600_med); VCEL (SP600_long); ANF, SSD (SP400_long); MRNA, COIN (SP500_short).
 
@@ -212,10 +200,8 @@ Examples: FTRE, HCC (SP600_short); GKOS, ADMA (SP600_med); VCEL (SP600_long); AN
 
 ### Environment
 
-```bash
 python --version
 pip install pandas numpy scikit-learn yfinance matplotlib seaborn
-
 
 ### Run the notebooks (order)
 
@@ -235,9 +221,8 @@ pip install pandas numpy scikit-learn yfinance matplotlib seaborn
 
 ---
 
-## Repository layout (this submission)
-```markdown
-```text
+## Repository layout
+
 .
 ├─ 01_EDA.ipynb
 ├─ 02_Model_80_20_and_OneDay_OOS.ipynb
